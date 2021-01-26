@@ -17,7 +17,8 @@ first import api_docs.json
 
 ### STEP 2
 set api_local and token as env variables and then make requests
-
+eg: api_local = localhost:3900  
+OR api_local = sumitrentomojo.ddns.net
 ## Demo user
 sumit@gmail.com
 password
