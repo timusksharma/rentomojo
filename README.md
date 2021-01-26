@@ -29,5 +29,7 @@ password
 /api/users/login
 
 /api/phonebook?page=1
+
 /api/phonebook/:id
+
 /api/phonebook/search
