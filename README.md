@@ -1,4 +1,4 @@
-# rentomojo
+# Rentomojo Backend Task
 
 ## Installation
 npm i
