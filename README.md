@@ -25,8 +25,8 @@ OR
 api_local = sumitrentomojo.ddns.net
 
 ## Demo user
-sumit@gmail.com
-password
+used id : sumit@gmail.com
+password : password
 
 
 # live host URL
