@@ -26,6 +26,9 @@ password
 # live host URL
 url: sumitrentomojo.ddns.net
 
+# FOR OFFLINE USE 
+localhost:3900
+
 ##  APIS endpoints:
 /api/users/signup  
 /api/users/login
