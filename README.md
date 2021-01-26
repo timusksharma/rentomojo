@@ -21,8 +21,10 @@ set api_local and token as env variables and then make requests
 sumit@gmail.com
 password
 
-live host url: sumitrentomojo.ddns.net
-apis endpoints:
+
+# live host url: sumitrentomojo.ddns.net
+
+##  APIS endpoints:
 /api/users/signup
 /api/users/login
 
