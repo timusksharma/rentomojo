@@ -7,6 +7,7 @@ npm i
 nodemon app.js
 
 Includes env.txt which includes mongodb uri and jwt key 
+
 api_docs which contains postman collections.
 
 ## How to execute in POSTMAN(APPLICATION)
