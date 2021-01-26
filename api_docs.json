@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "2354d507-3479-4745-abaa-ff646c954b42",
+		"name": "phonebook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "user signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"sumit@yopmail.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_local}}/api/users/signup",
+							"host": [
+								"{{api_local}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"sumit@yopmail.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_local}}/api/users/login",
+							"host": [
+								"{{api_local}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "contacts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_local}}/api/phonebook?page=1",
+					"host": [
+						"{{api_local}}"
+					],
+					"path": [
+						"api",
+						"phonebook"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add contact",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"zebra\",\r\n    \"phone\": \"123d4567890\",\r\n    \"email\": \"ff@ddd.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api_local}}/api/phonebook/",
+					"host": [
+						"{{api_local}}"
+					],
+					"path": [
+						"api",
+						"phonebook",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit contact",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"edited\",\r\n    \"phone\": \"1234567890\",\r\n    \"email\": \"jdh@jhd.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api_local}}/api/phonebook/600ed8e6247dde8278451cb7",
+					"host": [
+						"{{api_local}}"
+					],
+					"path": [
+						"api",
+						"phonebook",
+						"600ed8e6247dde8278451cb7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete contact",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{api_local}}/api/phonebook/600ed8e6247dde8278451cb7",
+					"host": [
+						"{{api_local}}"
+					],
+					"path": [
+						"api",
+						"phonebook",
+						"600ed8e6247dde8278451cb7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search contact",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"z\",\r\n    \"email\": \"zf\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api_local}}/api/phonebook/search",
+					"host": [
+						"{{api_local}}"
+					],
+					"path": [
+						"api",
+						"phonebook",
+						"search"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
