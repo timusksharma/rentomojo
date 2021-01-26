@@ -6,10 +6,9 @@ npm i
 ## run
 nodemon app.js
 
-## Includes
-env.txt (change to .env) which includes mongodb uri and jwt key 
-
-api_docs.json file which contains postman collections.
+# Includes
+   env.txt (change to .env) which includes mongodb uri and jwt key 
+   ### MUST INCLUDE  api_docs.json file which contains postman collections.
 
 ## How to execute in POSTMAN(APPLICATION)
 
@@ -31,8 +30,14 @@ url: sumitrentomojo.ddns.net
 /api/users/signup  
 /api/users/login
 
+# GET CONTACT LIST (PAGINATION) (LIMIT 10)
 /api/phonebook?page=1
 
+# FOR DELETE EDIT  CONTACTS
 /api/phonebook/:id
 
+# FOR ADD CONTACTS
+/api/phonebook/
+
+# SEARCH
 /api/phonebook/search
