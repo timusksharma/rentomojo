@@ -25,7 +25,7 @@ password
 # live host url: sumitrentomojo.ddns.net
 
 ##  APIS endpoints:
-/api/users/signup  /n
+/api/users/signup  
 /api/users/login
 
 /api/phonebook?page=1
