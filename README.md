@@ -22,7 +22,8 @@ sumit@gmail.com
 password
 
 
-# live host url: sumitrentomojo.ddns.net
+# live host URL
+url: sumitrentomojo.ddns.net
 
 ##  APIS endpoints:
 /api/users/signup  
